@@ -22,7 +22,7 @@ namespace Hijinks {
 
       Graphics() = default;
       bool Initialize() override;
-      void Update() override;
+      void Update(double dt) override;
       void Shutdown() override;
 
    private:

@@ -1,7 +1,8 @@
 #include "Engine.hpp"
 
-int main(int /*argc*/, char* /*argv*/[]) {
+int main() {
    Hijinks::Engine engine;
    engine.Run();
+
    return 0;
 }

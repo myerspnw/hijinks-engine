@@ -23,7 +23,13 @@ namespace Hijinks {
       virtual ~System() = default;
 
       [[nodiscard]] virtual bool Initialize() { return true; }
-      virtual void Update() = 0;
+
+      // Deterministic simulation step (e.g., physics, game logic) at a fixed dt.
+      virtual void FixedUpdate(double /*dt*/) {}
+
+      // Per-frame update (e.g., input polling, rendering).
+      virtual void Update(double dt) {};
+
       virtual void Shutdown() {}
 
    protected:

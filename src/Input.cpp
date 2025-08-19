@@ -16,7 +16,7 @@ bool Input::Initialize() {
    return true;
 }
 
-void Input::Update() {
+void Input::Update(double /*dt*/) {
    SDL_Event ev;
 
    while (SDL_PollEvent(&ev)) {

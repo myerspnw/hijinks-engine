@@ -25,7 +25,7 @@ bool Graphics::Initialize() {
    return true;
 }
 
-void Graphics::Update() {
+void Graphics::Update(double dt) {
    if (!renderer_)
       return;
 

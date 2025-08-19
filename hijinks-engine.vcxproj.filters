@@ -12,35 +12,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source\Graphics.cpp">
-      <Filter>Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="source\Input.cpp">
-      <Filter>Systems</Filter>
-    </ClCompile>
-    <ClCompile Include="source\main.cpp" />
-    <ClCompile Include="source\Engine.cpp">
+    <ClInclude Include="include\EventBus.hpp">
+      <Filter>Event Bus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Events.hpp">
+      <Filter>Event Bus</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Engine.hpp">
       <Filter>Engine</Filter>
-    </ClCompile>
+    </ClInclude>
+    <ClInclude Include="include\Graphics.hpp">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Input.hpp">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="include\System.hpp">
+      <Filter>Systems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="source\EventBus.hpp">
-      <Filter>Event Bus</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Events.hpp">
-      <Filter>Event Bus</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Graphics.hpp">
-      <Filter>Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Input.hpp">
-      <Filter>Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="source\System.hpp">
-      <Filter>Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="source\Engine.hpp">
+    <ClCompile Include="src\Engine.cpp">
       <Filter>Engine</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="src\Graphics.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Input.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

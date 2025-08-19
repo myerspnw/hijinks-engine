@@ -7,9 +7,15 @@
 #include <memory>
 #include <algorithm>
 
+#ifdef HIJINKS_ENGINE_EXPORTS
+#define HIJINKS_API __declspec(dllexport)
+#else
+#define HIJINKS_API __declspec(dllimport)
+#endif
+
 namespace Hijinks {
    // A simple, header-only, type-safe event bus with queued delivery.
-   class EventBus {
+   class HIJINKS_API EventBus {
    public:
       using SubscriptionId = std::size_t;
 
