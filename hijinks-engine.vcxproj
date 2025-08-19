@@ -127,9 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Graphics.cpp" />
-    <ClCompile Include="ISystem.hpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\Engine.cpp" />
+    <ClCompile Include="source\Graphics.cpp" />
+    <ClCompile Include="source\Input.cpp" />
+    <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SDL-release-3.2.20\VisualC\SDL\SDL.vcxproj">
@@ -137,7 +138,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graphics.hpp" />
+    <ClInclude Include="source\Engine.hpp" />
+    <ClInclude Include="source\EventBus.hpp" />
+    <ClInclude Include="source\Events.hpp" />
+    <ClInclude Include="source\Graphics.hpp" />
+    <ClInclude Include="source\Input.hpp" />
+    <ClInclude Include="source\System.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

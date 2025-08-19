@@ -1,28 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="Systems">
       <UniqueIdentifier>{f8d57eb9-82ab-43ad-ad1a-97501f1c3fd0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Event Bus">
+      <UniqueIdentifier>{d1c44e9c-18bd-410e-9d3b-e1893c158a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{ba6c091b-69ef-4024-98f6-a1a4a5310540}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ISystem.hpp">
+    <ClCompile Include="source\Graphics.cpp">
       <Filter>Systems</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics.cpp">
+    <ClCompile Include="source\Input.cpp">
       <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\Engine.cpp">
+      <Filter>Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Graphics.hpp">
+    <ClInclude Include="source\EventBus.hpp">
+      <Filter>Event Bus</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Events.hpp">
+      <Filter>Event Bus</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Graphics.hpp">
       <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Input.hpp">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\System.hpp">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Engine.hpp">
+      <Filter>Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
